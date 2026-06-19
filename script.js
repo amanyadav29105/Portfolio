@@ -1,7 +1,6 @@
 window.addEventListener("scroll", () => {
 
-const header =
-document.querySelector(".header");
+const header = document.querySelector(".header");
 
 header.style.boxShadow =
 window.scrollY > 50
