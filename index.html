@@ -1,252 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Aman Yadav | Portfolio</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Aman Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
+<header>
+    <h1>Aman Yadav</h1>
 
-<nav class="navbar">
-
-<div class="logo">AMAN.</div>
-
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section class="hero">
+<main>
 
-<div class="hero-content">
+<!-- ABOUT -->
+<section id="about">
 
-<p class="tagline">WELCOME TO MY PORTFOLIO</p>
+<h2>About Me</h2>
 
-<h1>
-Hi, I'm <span>Aman Yadav</span>
-</h1>
-
-<h2>
-<span id="typing"></span>
-</h2>
+<img src="https://www.image2url.com/r2/default/images/1781863487437-7c1938fc-8dd1-41ca-a302-41ba7e8b7b20.png"
+alt="Profile picture of Aman">
 
 <p>
-Passionate Computer Science student creating modern,
-responsive and user-friendly websites.
+Hello! I am Aman, a CSE student and photography enthusiast.
+I enjoy web development, coding, photography, and creative design.
+I am currently learning HTML, CSS and JavaScript.
 </p>
 
-<div class="hero-buttons">
-
-<a href="#contact" class="btn">
-Contact Me
-</a>
-
-<a href="resume.pdf" download class="btn-outline">
+<a href="https://www.image2url.com/r2/default/documents/1781863043736-760f6d22-cb83-4528-a543-466b18af175b.pdf"
+target="_blank"
+class="resume-btn">
 Download Resume
 </a>
 
-</div>
+</section>
 
-</div>
 
-<div class="hero-image">
+<!-- SKILLS -->
+<section id="skills">
 
-<img
-src="https://ibb.co/fz5kjcZ3"
-alt="Profile picture of Aman Yadav">
+<h2>My Skills</h2>
 
-</div>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>C Programming</li>
+<li>Photography</li>
+<li>Editing</li>
+</ul>
 
 </section>
 
-<section class="stats reveal">
 
-<div class="stat-box">
-<h3>10+</h3>
-<p>Projects</p>
-</div>
+<!-- CONTACT -->
+<section id="contact">
 
-<div class="stat-box">
-<h3>5+</h3>
-<p>Technologies</p>
-</div>
+<h2>Contact Me</h2>
 
-<div class="stat-box">
-<h3>100%</h3>
-<p>Learning Mindset</p>
-</div>
+<form id="contactForm">
 
-</section>
+<label>Name:</label>
+<input type="text" placeholder="Enter your name" required>
 
-<section id="about" class="section reveal">
+<label>Email:</label>
+<input type="email" placeholder="Enter your email" required>
 
-<h2 class="section-title">
-About Me
-</h2>
+<label>Message:</label>
+<textarea placeholder="Write your message" required></textarea>
 
-<div class="card">
-
-<p>
-I am a Computer Science student passionate about
-Web Development, Programming and Photography.
-
-I enjoy transforming ideas into modern digital experiences
-using clean code and beautiful user interfaces.
-</p>
-
-</div>
-
-</section>
-
-<section id="skills" class="section reveal">
-
-<h2 class="section-title">
-Skills
-</h2>
-
-<div class="skill">
-
-<p>HTML</p>
-<div class="bar">
-<div class="progress html"></div>
-</div>
-
-<p>CSS</p>
-<div class="bar">
-<div class="progress css"></div>
-</div>
-
-<p>JavaScript</p>
-<div class="bar">
-<div class="progress js"></div>
-</div>
-
-<p>C Programming</p>
-<div class="bar">
-<div class="progress c"></div>
-</div>
-
-</div>
-
-</section>
-
-<section id="projects" class="section reveal">
-
-<h2 class="section-title">
-Projects
-</h2>
-
-<div class="project-grid">
-
-<div class="project-card">
-<h3>Portfolio Website</h3>
-<p>Professional personal portfolio website.</p>
-</div>
-
-<div class="project-card">
-<h3>Photography Gallery</h3>
-<p>Responsive image gallery with modern layout.</p>
-</div>
-
-<div class="project-card">
-<h3>Student Management</h3>
-<p>Academic management project using programming concepts.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="section reveal">
-
-<h2 class="section-title">
-Contact Me
-</h2>
-
-<div class="contact-container">
-
-<div class="contact-info">
-
-<h3>Get In Touch</h3>
-
-<p>📞 Your Phone Number</p>
-
-<p>📧 Your Email Address</p>
-
-<p>
-Available for internships, freelance work and collaborations.
-</p>
-
-</div>
-
-<form
-action="https://formsubmit.co/your-email@example.com"
-method="POST"
-class="contact-form">
-
-<input
-type="text"
-name="name"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-name="email"
-placeholder="Your Email"
-required>
-
-<textarea
-name="message"
-rows="6"
-placeholder="Your Message"
-required></textarea>
-
-<button type="submit">
-Send Message
-</button>
-
-<input type="hidden"
-name="_subject"
-value="Portfolio Contact">
-
-<input type="hidden"
-name="_captcha"
-value="false">
+<button type="submit">Send</button>
 
 </form>
 
-</div>
+<p id="success"></p>
 
 </section>
 
+</main>
+
 <footer>
-
-<p>© 2026 Aman Yadav | Portfolio</p>
-
+<p>© 2026 Aman Portfolio</p>
 </footer>
-
-<button id="topBtn">
-↑
-</button>
 
 <script src="script.js"></script>
 
