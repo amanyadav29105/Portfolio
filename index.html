@@ -12,47 +12,37 @@
 
 <header>
     <h1>Aman Yadav</h1>
-
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <main>
 
 <!-- ABOUT -->
-<section id="about">
-
+<section id="about" class="card">
 <h2>About Me</h2>
 
-<img src="https://www.image2url.com/r2/default/images/1781863487437-7c1938fc-8dd1-41ca-a302-41ba7e8b7b20.png"
-alt="Profile picture of Aman">
+<img src="https://www.image2url.com/r2/default/images/1781863487437-7c1938fc-8dd1-41ca-a302-41ba7e8b7b20.png" alt="Aman">
 
 <p>
-Hello! I am Aman, a CSE student and photography enthusiast.
-I enjoy web development, coding, photography, and creative design.
-I am currently learning HTML, CSS and JavaScript.
+I am Aman, a CSE student passionate about web development, design and photography.
+I build clean and modern websites using HTML, CSS and JavaScript.
 </p>
 
-<a href="https://www.image2url.com/r2/default/documents/1781863043736-760f6d22-cb83-4528-a543-466b18af175b.pdf"
-target="_blank"
-class="resume-btn">
+<a href="https://www.image2url.com/r2/default/documents/1781863043736-760f6d22-cb83-4528-a543-466b18af175b.pdf" target="_blank" class="btn">
 Download Resume
 </a>
 
 </section>
 
-
 <!-- SKILLS -->
-<section id="skills">
-
-<h2>My Skills</h2>
-
-<ul>
+<section id="skills" class="card">
+<h2>Skills</h2>
+<ul class="skills">
 <li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li>
@@ -60,31 +50,46 @@ Download Resume
 <li>Photography</li>
 <li>Editing</li>
 </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="card">
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Personal portfolio built with modern UI.</p>
+</div>
+
+<div class="project">
+<h3>E-commerce UI</h3>
+<p>Amazon/Flipkart style shopping interface.</p>
+</div>
+
+<div class="project">
+<h3>Movie Website</h3>
+<p>Movie search app using APIs.</p>
+</div>
+
+</div>
 
 </section>
 
-
-<!-- CONTACT -->
-<section id="contact">
-
+<!-- CONTACT (Formspree) -->
+<section id="contact" class="card">
 <h2>Contact Me</h2>
 
-<form id="contactForm">
+<form action="https://formspree.io/f/mykarwbp" method="POST">
 
-<label>Name:</label>
-<input type="text" placeholder="Enter your name" required>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
 
-<label>Email:</label>
-<input type="email" placeholder="Enter your email" required>
-
-<label>Message:</label>
-<textarea placeholder="Write your message" required></textarea>
-
-<button type="submit">Send</button>
+<button type="submit" class="btn">Send Message</button>
 
 </form>
-
-<p id="success"></p>
 
 </section>
 
@@ -93,8 +98,6 @@ Download Resume
 <footer>
 <p>© 2026 Aman Portfolio</p>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
